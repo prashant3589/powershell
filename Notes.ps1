@@ -5,3 +5,6 @@ Get-InstalledModule -Name Az -AllVersion | Select-Object -Property Name,Version
 Get-AzVM
 Connect-AzAccount
 Get-AzWebApp
+Get-AzSubscription
+$context = Get-AzSubscription SubscriptionId <yoursubscriptionId>
+Set-AzContext $context
